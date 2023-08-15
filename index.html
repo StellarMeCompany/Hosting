@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./src/logonegro.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>StellarME</title>
+  </head>
+  <body>
+    <div class="audio-body">
+      <div class="music-player">
+        <div class="song-info">
+          <h2 class="audio-h2" id="songTitle">Song Title</h2>
+          <p class="audio-p" id="artistName">Artist Name</p>
+        </div>
+        <div class="controls">
+          <button id="prevButton"><i class="fas fa-step-backward"></i></button>
+          <button id="playButton"><i class="fas fa-play"></i></button>
+          <button id="nextButton"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="volume-controls">
+          <button id="volume-icon"><i class="fas fa-volume-up"></i></button>
+        </div>
+        <audio id="audioPlayer">
+          <source src="" type="audio/mpeg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+      <script src="script.js"></script>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <footer class="footer">
+      <p class="footer-name">StellarME Company™</p>
+      <p class="footer-gmail">Contact: stellarmecontact@gmail.com</p>
+      <p class="footer-rights">All rights reserved 2023</p>
+    </footer>
+  </body>
+</html>
